@@ -1,0 +1,18 @@
+<body>
+<!--
+Simple solution in JavaScript that searches through string reverse and looks for "Publix"
+-->
+<p id="searchString">Click the button to search a string for Publix, and display the position of the match.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var str = document.getElementById("searchString").innerHTML;
+    var n = str.split(' ').reverse().join(' ').search("Publix");
+    document.getElementById("demo").innerHTML = n;
+}
+</script>
+</body>
