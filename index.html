@@ -12,7 +12,7 @@ Simple solution in JavaScript that searches through string reverse and looks for
 function myFunction() {
     var str = document.getElementById("searchString").innerHTML;
     var n = str.split(' ').reverse().join(' ').search("Publix");
-    document.getElementById("demo").innerHTML = n;
+    document.getElementById("demo").innerHTML = "Found at: " + n;
 }
 </script>
 </body>
